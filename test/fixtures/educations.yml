@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: MyString
+  course: MyString
+  university: MyString
+  passed_year: 1
+  gpa: 1.5
+  anticipated_passed_year: 1
+
+two:
+  level: MyString
+  course: MyString
+  university: MyString
+  passed_year: 1
+  gpa: 1.5
+  anticipated_passed_year: 1
