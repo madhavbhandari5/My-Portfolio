@@ -1,0 +1,12 @@
+<div id="<%= dom_id resume %>">
+  <p>
+    <strong>Title:</strong>
+    <%= resume.title %>
+  </p>
+
+  <p>
+    <strong>File:</strong>
+    <%= link_to resume.file.filename, resume.file if resume.file.attached? %>
+  </p>
+
+</div>

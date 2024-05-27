@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+    color: #fcfbf9;
+}
+
+.content-box {
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    width: 350px;
+    margin-left: 20px;
+}
+
+.intro-container {
+    text-align: left;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.intro  h2 {
+    font-size: 24px;
+}
+
+.intro .position {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#hire-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#hire-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.image-container {
+    width: 350px;
+    position: absolute;
+    top: 158px; /* Adjust as needed based on your navigation bar height */
+    right: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center content horizontally */
+    height: 217px;
+}
+
+.image-container img {
+    width: 200px; /* Ensure image fills container */
+    height: 168px;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 10px;
+}
+
+.image-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #007bff; /* Icon color */
+    font-size: 20px;
+}

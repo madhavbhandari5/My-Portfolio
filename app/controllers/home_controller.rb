@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   end
 
   def about
+    @projects = Project.all
   end
 
   def contact

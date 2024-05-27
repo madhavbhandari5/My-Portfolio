@@ -1,0 +1,23 @@
+<h1>Resumes</h1>
+
+<% if logged_in? && current_user.admin? %>
+  <%= link_to 'New Resume', new_resume_path %>
+<% end %>
+
+<ul>
+  <% @resumes.each do |resume| %>
+    <li>
+      <%= resume.title %> |
+      <%= link_to 'Edit', edit_resume_path(resume) %> |
+      <%= link_to 'Destroy', resume, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+      <% if resume.file.attached? %>
+        | <%= link_to 'Download', url_for(resume.file) %> |
+        <%= link_to 'Preview', resume.file, target: '_blank' %>
+      <% else %>
+        | No file attached
+      <% end %>
+    </li>
+  <% end %>
+
+</ul>

@@ -16,6 +16,7 @@ gem "mysql2", "~> 0.5"
 gem "puma", "~> 5.0"
 gem 'bootstrap', '~> 5.1.0'
 gem 'faker'
+gem 'bcrypt', '~> 3.1.7'
 
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]

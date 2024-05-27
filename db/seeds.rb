@@ -1,5 +1,11 @@
 require 'faker'
 
+# Seed user data
+users = User.create!([
+                       { email: 'john@example.com', password: 'password', admin: true },
+                       { email: 'jane@example.com', password: 'password', admin: false }
+                     ])
+
 # Seed education data
 5.times do
   passed_year = [Faker::Number.between(from: 2000, to: 2023), nil].sample
@@ -29,5 +35,13 @@ end
   Skill.create(
     name: Faker::ProgrammingLanguage.name,
     proficiency: Faker::Number.between(from: 1, to: 5).to_s
+  )
+end
+
+# Seed resume data
+5.times do
+  Resume.create!(
+    title: Faker::Job.title,
+    user_id: users.sample.id  # Randomly assign a user_id to each resume
   )
 end

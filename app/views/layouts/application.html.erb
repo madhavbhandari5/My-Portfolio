@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Madhav Portfolio</title>
+  <!-- Add your CSS and JavaScript includes here -->
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-L1Si5drHwJWqR3VYkYF9GuO9cBjSk8pMHbNN2J6ZSFZ74/SXJxtmqF9nCUg8axn4qkFWwaWJ+D9Rz++nYlqD9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'navigation', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'flash_messages', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= javascript_include_tag 'scripts' %>
+
+
+</head>
+<body>
+<!-- Render navigation partial -->
+<%= render 'layouts/navigation' %>
+
+<!-- Render flash messages partial -->
+<%= render 'layouts/flash_messages' %>
+
+<!-- Yield content from child views -->
+<%= yield %>
+</body>
 </html>
